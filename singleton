@@ -1,0 +1,17 @@
+class SingletonObject:
+    # this is private variable/object declarate in pythosn
+    _singletonObject = None
+ 
+    # Annotations from static method
+    @staticmethod
+    def getSingletonObjectInstance():
+        # if the value of _singletonObject is None
+        if SingletonObject._singletonObject is None:
+            # the object do the instanciation
+            SingletonObject._singletonObject = SingletonObject()
+        # return the _singletonObject value
+        return SingletonObject._singletonObject
+ 
+    # test method to check the _singletonObject is instanciate or not
+    def getMessage(self):
+        print (&quot;saya ilham bima nim 1600018202&quot;)
